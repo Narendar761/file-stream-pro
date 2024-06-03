@@ -12,9 +12,9 @@ bisal_grp = "https://t.me/+PA8OPL2Zglk3MDM1"
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', ''))
-    API_HASH = str(getenv('API_HASH', ''))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , ''))
+    API_ID = int(getenv('API_ID', '22808125'))
+    API_HASH = str(getenv('API_HASH', '406c09543fec722fe3c48ca2f06d78de'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , '6826963075:AAH82I95CN08QWChY2LzHNZJ4bAslC6WcVs'))
     name = str(getenv('name', 'bisal_file2link_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
@@ -23,7 +23,7 @@ class Var(object):
     PORT = int(getenv('PORT', '8080'))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = [int(x) for x in os.environ.get("OWNER_ID", "5397984467").split()]
+    OWNER_ID = [int(x) for x in os.environ.get("OWNER_ID", "819861991").split()]
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
     OWNER_USERNAME = str(getenv('OWNER_USERNAME', 'biisal'))
@@ -39,8 +39,8 @@ class Var(object):
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', ''))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'bisal_files')) 
+    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://Nkbot001:nkbot123@helpy.wfrytzq.mongodb.net/?retryWrites=true&w=majority&appName=Helpy'))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', '-1001916142483')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
     BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "")).split()))   
     BAN_ALERT = str(getenv('BAN_ALERT' , '<b>ʏᴏᴜʀ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴛʜɪs ʙᴏᴛ.Pʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ @biisal_bot ᴛᴏ ʀᴇsᴏʟᴠᴇ ᴛʜᴇ ɪssᴜᴇ!!</b>'))
